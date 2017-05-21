@@ -39,7 +39,7 @@ namespace Aula1505
         protected void btnEnviarCliques_Click(object sender, EventArgs e)
         {
             Session.Add("QtdCliquesSession", QuantidadeCliques);
-            Response.Redirect("~/WebForm2");
+            Response.Redirect("~/WebForm2.aspx");
         }
     }
 }
