@@ -13,193 +13,112 @@ namespace PaginaSoma {
     public partial class SegundaPaginaaspx {
         
         /// <summary>
-        /// UpdatePanel1 control.
+        /// txtV1A control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.UpdatePanel UpdatePanel1;
+        protected global::System.Web.UI.WebControls.TextBox txtV1A;
         
         /// <summary>
-        /// txtSoma1 control.
+        /// txtV2A control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtSoma1;
+        protected global::System.Web.UI.WebControls.TextBox txtV2A;
         
         /// <summary>
-        /// lblSoma control.
+        /// txtR1A control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblSoma;
+        protected global::System.Web.UI.WebControls.TextBox txtR1A;
         
         /// <summary>
-        /// txtSoma2 control.
+        /// txtV1S control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtSoma2;
+        protected global::System.Web.UI.WebControls.TextBox txtV1S;
         
         /// <summary>
-        /// btnIgualSoma control.
+        /// txtV2S control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnIgualSoma;
+        protected global::System.Web.UI.WebControls.TextBox txtV2S;
         
         /// <summary>
-        /// txtIgualSoma control.
+        /// txtR1S control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtIgualSoma;
+        protected global::System.Web.UI.WebControls.TextBox txtR1S;
         
         /// <summary>
-        /// txtSub1 control.
+        /// txtV1M control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtSub1;
+        protected global::System.Web.UI.WebControls.TextBox txtV1M;
         
         /// <summary>
-        /// lblSub control.
+        /// txtV2M control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblSub;
+        protected global::System.Web.UI.WebControls.TextBox txtV2M;
         
         /// <summary>
-        /// txtSub2 control.
+        /// txtR1M control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtSub2;
+        protected global::System.Web.UI.WebControls.TextBox txtR1M;
         
         /// <summary>
-        /// btnIgualSub control.
+        /// txtV1D control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnIgualSub;
+        protected global::System.Web.UI.WebControls.TextBox txtV1D;
         
         /// <summary>
-        /// txtIgualSub control.
+        /// txtV2D control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtIgualSub;
+        protected global::System.Web.UI.WebControls.TextBox txtV2D;
         
         /// <summary>
-        /// txtDiv1 control.
+        /// txtR1D control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtDiv1;
-        
-        /// <summary>
-        /// lblDiv control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblDiv;
-        
-        /// <summary>
-        /// txtDiv2 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtDiv2;
-        
-        /// <summary>
-        /// btnIgualDiv control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnIgualDiv;
-        
-        /// <summary>
-        /// txtIgualDiv control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtIgualDiv;
-        
-        /// <summary>
-        /// txtMult1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtMult1;
-        
-        /// <summary>
-        /// lblMult control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblMult;
-        
-        /// <summary>
-        /// txtMult2 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtMult2;
-        
-        /// <summary>
-        /// btnIgualMult control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnIgualMult;
-        
-        /// <summary>
-        /// txtIgualMult control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtIgualMult;
+        protected global::System.Web.UI.WebControls.TextBox txtR1D;
         
         /// <summary>
         /// btnVoltar control.

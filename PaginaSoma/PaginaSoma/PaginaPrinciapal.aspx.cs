@@ -9,56 +9,62 @@ namespace PaginaSoma
 {
     public partial class PaginaPrinciapal : System.Web.UI.Page
     {
-        int num1, num2;
 
-        public int Res
+
+        public string NomeUsuario
         {
             get
             {
-                return Convert.ToInt32(ViewState["resultado"]);
-            }
-            set
-            {
-                ViewState["resultado"] = value;
+                return ViewState["NomeUsuario"].ToString();
             }
 
+            set
+            {
+                ViewState["NomeUsuario"] = value;
+            }
         }
 
 
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            //if (!IsPostBack)
-            //    Res = 0;
+            if (!IsPostBack)
+            {
+                NomeUsuario = "Godofredo";
+            }
 
-        }
+        }      
 
-
-
-        protected void txtNum1_TextChanged(object sender, EventArgs e)
+        protected void btnMais_Click(object sender, EventArgs e)
         {
-            txtNum1.Text = num1.ToString();
-        }
 
-        protected void txtNum2_TextChanged(object sender, EventArgs e)
-        {
-            txtNum2.Text = num2.ToString();
-        }
 
-        protected void btnSoma_Click(object sender, EventArgs e)
-        {
-          txtNum1.Text = num1.ToString();
-          txtNum2.Text = num2.ToString();
-            Res = int.Parse(txtNum1.Text = txtNum2.Text);
+            // Armazenando informacao na ViewState
+            ViewState["valor1"] = txtValor1.Text;
+            ViewState["valor2"] = txtValor2.Text;
 
+
+            // Recuperando informacao da ViewState
+            double res =
+                Convert.ToDouble(ViewState["valor1"]) +
+                Convert.ToDouble(ViewState["valor2"]);
+
+            lblNome.Text = NomeUsuario + " o resultado é ";
+
+            txtResultado.Text = res.ToString();
         }
 
         protected void btnIgual_Click(object sender, EventArgs e)
         {
-           
-            Session.Add("resultadoSession", Res);
+            // armazenando os valores na session
+            Session["valor1"] = txtValor1.Text;
+            Session["valor2"] = txtValor2.Text;
+
+            // Redirecionando o usuario
             Response.Redirect("~/SegundaPaginaaspx.aspx");
 
+
         }
+
     }
 }

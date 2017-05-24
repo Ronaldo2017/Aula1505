@@ -9,22 +9,49 @@ namespace PaginaSoma
 {
     public partial class SegundaPaginaaspx : System.Web.UI.Page
     {
-       
+
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            int Soma1ViewState = Convert.ToInt32(ViewState["soma1"]);
+            // verifica se nao eh um PostBack
+            if (!IsPostBack)
+            {
+                if (Session["valor1"] != null && Session["valor2"] != null)
+                {
+                    // recuperar valores da session
+                    double valor1 = Convert.ToDouble(Session["valor1"]);
+                    double valor2 = Convert.ToDouble(Session["valor2"]);
 
-            int Soma1Session = Convert.ToInt32(ViewState["soma1Session"]);
+                    // efetuar calculos
+                    double soma = valor1 + valor2;
+                    double subt = valor1 - valor2;
+                    double mult = valor1 * valor2;
+                    double div = valor1 / valor2;
 
-            int Soma2ViewState = Convert.ToInt32(ViewState["soma2"]);
 
-            int Soma2Session = Convert.ToInt32(ViewState["soma2Session"]);
+                    // preencher campos (exibir valores)
+                    txtV1A.Text = valor1.ToString();
+                    txtV2A.Text = valor2.ToString();
+                    txtR1A.Text = soma.ToString();
 
-            txtSoma1.Text = Soma1Session.ToString();
+                    txtV1S.Text = valor1.ToString();
+                    txtV2S.Text = valor2.ToString();
+                    txtR1S.Text = subt.ToString();
 
-            txtSoma2.Text = Soma2Session.ToString();
-            
+                    txtV1M.Text = valor1.ToString();
+                    txtV2M.Text = valor2.ToString();
+                    txtR1M.Text = mult.ToString();
+
+                    txtV1D.Text = valor1.ToString();
+                    txtV2D.Text = valor2.ToString();
+                    txtR1D.Text = div.ToString();
+                }
+                else
+                {
+                    Response.Redirect("~/SegundaPaginaaspx.aspx");
+                }
+
+            }
         }
 
         protected void btnVoltar_Click(object sender, EventArgs e)
@@ -32,6 +59,6 @@ namespace PaginaSoma
             Response.Redirect("~/PaginaPrinciapal.aspx");
         }
 
-       
+
     }
 }
