@@ -146,7 +146,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="CONTROLERS\" />
-    <Folder Include="VIEWS\Produtos\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
@@ -227,6 +226,7 @@
     <Content Include="Site.Master" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="VIEWS\Categorias\Lista.aspx" />
+    <Content Include="VIEWS\Produtos\ListaProdutosaspx.aspx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
     <Content Include="packages.config" />
@@ -258,6 +258,7 @@
     <Compile Include="Cadastro.aspx.designer.cs">
       <DependentUpon>Cadastro.aspx</DependentUpon>
     </Compile>
+    <Compile Include="CategoriasController.cs" />
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -296,6 +297,7 @@
     <Compile Include="MODELS\Produto.cs">
       <DependentUpon>BaseDados.tt</DependentUpon>
     </Compile>
+    <Compile Include="ProdutosController.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
@@ -327,6 +329,13 @@
     </Compile>
     <Compile Include="VIEWS\Categorias\Lista.aspx.designer.cs">
       <DependentUpon>Lista.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VIEWS\Produtos\ListaProdutosaspx.aspx.cs">
+      <DependentUpon>ListaProdutosaspx.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VIEWS\Produtos\ListaProdutosaspx.aspx.designer.cs">
+      <DependentUpon>ListaProdutosaspx.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

@@ -15,13 +15,13 @@ namespace Aula2405_EF_MF_MODELFIRST
 
         protected void btnSalvar_Click(object sender, EventArgs e)
         {
-            Categoria cat = new Categoria();
-            //passando objeto para cat
-            cat.Nome = txtNome.Text;
-            cat.Descricao = txtDescricao.Text;
+            //Categoria cat = new Categoria();
+            ////passando dados para objeto para cat
+            //cat.Nome = txtNome.Text;
+            //cat.Descricao = txtDescricao.Text;
 
-            contexto.Categorias.Add(cat);//adicionando a cat no banco
-            contexto.SaveChanges();//salva no banco
+            //contexto.Categorias.Add(cat);//adicionando a cat no banco
+            //contexto.SaveChanges();//salva no banco
 
 
         }

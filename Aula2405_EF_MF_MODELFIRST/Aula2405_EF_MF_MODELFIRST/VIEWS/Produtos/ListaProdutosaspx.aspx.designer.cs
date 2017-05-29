@@ -7,27 +7,27 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Aula2405_EF_MF_MODELFIRST.VIEWS.Categorias {
+namespace Aula2405_EF_MF_MODELFIRST.VIEWS.Produtos {
     
     
-    public partial class Lista {
+    public partial class ListaProdutosaspx {
         
         /// <summary>
-        /// gvwCategoria control.
+        /// gvwProduto control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView gvwCategoria;
+        protected global::System.Web.UI.WebControls.GridView gvwProduto;
         
         /// <summary>
-        /// gvCategoriasExcluidas control.
+        /// gvwProdutosExcluidas control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView gvCategoriasExcluidas;
+        protected global::System.Web.UI.WebControls.GridView gvwProdutosExcluidas;
     }
 }

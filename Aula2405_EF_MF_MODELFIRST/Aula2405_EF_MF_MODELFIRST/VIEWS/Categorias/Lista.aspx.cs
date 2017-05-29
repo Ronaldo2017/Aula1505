@@ -9,7 +9,18 @@ namespace Aula2405_EF_MF_MODELFIRST.VIEWS.Categorias
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            List<Categoria> Categorias = contexto.Categorias.ToList();
+            CategoriasController ctrl = new CategoriasController();
+            List<Categoria> lista = ctrl.Listar();
+
+            gvwCategoria.DataSource = lista.OrderBy(c => c.Nome);
+            gvwCategoria.DataBind();
+
+            gvCategoriasExcluidas.DataSource = ctrl.listarInativos();
+            gvCategoriasExcluidas.DataBind();
+
+            
         }
+
+       
     }
 }
