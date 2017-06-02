@@ -15,13 +15,25 @@ namespace Aula2405_EF_MF_MODELFIRST.VIEWS.Produtos
             ProdutosController ctrl = new ProdutosController();
             List<Produto> lista = ctrl.ListarProduto();
 
-            gvwProduto.DataSource = lista.OrderBy(p => p.Nome);
-            gvwProduto.DataBind();
+            //gvwProduto.DataSource = lista.OrderBy(p => p.Nome);
+            //gvwProduto.DataBind();
 
-            gvwProdutosExcluidas.DataSource = ctrl.ListarInativos();
-            gvwProdutosExcluidas.DataBind();
+            //gvwProdutosExcluidas.DataSource = ctrl.ListarInativos();
+            //gvwProdutosExcluidas.DataBind();
              
 
+
+        }
+
+        protected void btnSalvar_Click(object sender, EventArgs e)
+        {
+            Produto produto = new Produto();
+
+            produto.Nome = txtNome.Text;
+            produto.Descricao = txtDescricao.Text;
+
+            ProdutosController ctrl = new ProdutosController();
+            ctrl.AdicionarProduto(produto);
 
         }
     }
