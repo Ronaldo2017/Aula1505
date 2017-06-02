@@ -1,4 +1,4 @@
-﻿using Cadastro.Controllers.MaquinasController; 
+﻿using Cadastro.Controllers.MaquinasController;
 using CadastroMF.Modells;
 using System;
 
@@ -14,48 +14,23 @@ namespace CadastroMF.Views.MaquinasEProdutos
 
         protected void btnSalvar_Click(object sender, EventArgs e)
         {
-            Maquina maquina = new Maquina();             
+            Maquina maquina = new Maquina();
 
             maquina.Código = txtCodigoM.Text;
-            maquina.Descrição = txtDescricaoM.Text;            
+            maquina.Descrição = txtDescricaoM.Text;
 
-            MaquinasController ctrlm = new MaquinasController();           
+            MaquinasController ctrlm = new MaquinasController();
 
             ctrlm.AdicionarMaquina(maquina);
-            
+
         }
 
-        protected void btnProcurar_Click(object sender, EventArgs e)
-        {
-            Maquina maquina = new Maquina();
-            maquina.Código = txtCodigoM.Text;
-           
+        
 
-            if(maquina != null)
-            {
-                 txtDescricaoM.Text = maquina.Descrição;
-            }
-            
-        }
-
-        protected void btnEditar_Click(object sender, EventArgs e)
+        protected void btnLimpar_Click(object sender, EventArgs e)
         {
-            Maquina maquina = new Maquina();
-            maquina.Código = txtCodigoM.Text;
-            if(maquina != null)
-            {              
-                txtDescricaoM.Text = maquina.Descrição;                
-            }
-        }
-
-        protected void btnEcluir_Click(object sender, EventArgs e)
-        {
-            Maquina maquina = new Maquina();
-            maquina.Código = txtCodigoM.Text;
-            if (maquina != null)
-            {               
-                txtDescricaoM.Text = maquina.Descrição;
-            }
+            txtCodigoM.Text = string.Empty;
+            txtDescricaoM.Text = string.Empty;
         }
     }
 }

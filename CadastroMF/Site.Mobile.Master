@@ -6,6 +6,7 @@
 <head runat="server">
     <meta name="viewport" content="width=device-width" />
     <title></title>
+    <link href="Content/css/bootstrap.css" rel="stylesheet" />
     <asp:ContentPlaceHolder runat="server" ID="HeadContent" />
 </head>
 <body>

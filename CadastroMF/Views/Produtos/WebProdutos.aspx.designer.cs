@@ -13,6 +13,15 @@ namespace CadastroMF.Views.Produtos {
     public partial class WebProdutos {
         
         /// <summary>
+        /// UpdatePanel1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.UpdatePanel UpdatePanel1;
+        
+        /// <summary>
         /// lblCodigoP control.
         /// </summary>
         /// <remarks>
@@ -29,6 +38,15 @@ namespace CadastroMF.Views.Produtos {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtCodigoP;
+        
+        /// <summary>
+        /// rfvCodigo control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvCodigo;
         
         /// <summary>
         /// lblDescricaoP control.
@@ -49,6 +67,15 @@ namespace CadastroMF.Views.Produtos {
         protected global::System.Web.UI.WebControls.TextBox txtDescricaoP;
         
         /// <summary>
+        /// rfvDescricao control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvDescricao;
+        
+        /// <summary>
         /// btnSalvar control.
         /// </summary>
         /// <remarks>
@@ -56,5 +83,14 @@ namespace CadastroMF.Views.Produtos {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnSalvar;
+        
+        /// <summary>
+        /// btnLimpar control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnLimpar;
     }
 }

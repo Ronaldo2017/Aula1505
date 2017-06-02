@@ -11,7 +11,7 @@
                     </asp:RequiredFieldValidator>
                 </div>
                 <br>
-                    <div classr="row">
+                <div class="row">
                     <asp:Label ID="lblDesxricao" runat="server" Text="Descrição"></asp:Label>
                     <asp:TextBox ID="txtDescricao" runat="server" TextMode="MultiLine"></asp:TextBox>
                 </div>
@@ -26,12 +26,7 @@
                     <asp:Button ID="btnSalvar" runat="server" OnClick="btnSalvar_Click" Text="Salvar" />
                     <asp:Button ID="btnCancelar" runat="server" CausesValidtion="false" OnClick="btnCancelar_Click" Text="Cancelar" />
                 </div>
-                <br></br>
-                <br></br>
-                </br>
-                </br>
-                </br>
-                </br>
+
             </div>
         </ContentTemplate>
     </asp:UpdatePanel>

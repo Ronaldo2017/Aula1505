@@ -27,6 +27,12 @@ namespace CadastroMF.Views.Produtos
             ctrlp.AdicionarProduto(produto);
         }
 
-       
+        protected void btnLimpar_Click(object sender, EventArgs e)
+        {
+            txtCodigoP.Text = string.Empty;
+            txtDescricaoP.Text = string.Empty;
+        }
+
+        
     }
 }
