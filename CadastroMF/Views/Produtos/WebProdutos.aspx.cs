@@ -19,20 +19,26 @@ namespace CadastroMF.Views.Produtos
 
             produto.Código = txtCodigoP.Text;
             produto.Descrição = txtDescricaoP.Text;
-           
-            
+            produto.MaquinaId = int.Parse(txtMaquinaId.Text);         
 
             ProdutosController ctrlp = new ProdutosController();
 
             ctrlp.AdicionarProduto(produto);
+
+            LimparDados();
         }
 
         protected void btnLimpar_Click(object sender, EventArgs e)
         {
             txtCodigoP.Text = string.Empty;
             txtDescricaoP.Text = string.Empty;
+            txtMaquinaId.Text = string.Empty;
         }
 
-        
+        private void LimparDados()
+        {
+            txtCodigoP.Text = string.Empty;
+            txtDescricaoP.Text = string.Empty;
+        }
     }
 }

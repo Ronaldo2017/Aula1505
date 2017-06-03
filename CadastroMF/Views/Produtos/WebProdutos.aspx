@@ -18,6 +18,11 @@
                 <asp:RequiredFieldValidator ID="rfvDescricao" runat="server" ErrorMessage="Preenchimento Obrigatório" ControlToValidate="txtDescricaoP"></asp:RequiredFieldValidator>
             </div>
 
+             <div class="form-group">
+                 <asp:Label ID="lblMaquinaId" runat="server" Text="MáquinaId"></asp:Label>
+                 <asp:TextBox ID="txtMaquinaId" runat="server"  CssClass="form-control"  Width="45px"></asp:TextBox>
+             </div>
+
             <div class="form-group">
                 <asp:Button ID="btnSalvar" runat="server" Text="Salvar" OnClick="btnSalvar_Click" CssClass="btn btn-primary" />
                 <asp:Button ID="btnLimpar" runat="server" Text="Limpar Dados" OnClick="btnLimpar_Click" CssClass="btn btn-primary" />

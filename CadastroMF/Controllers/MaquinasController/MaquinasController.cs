@@ -39,5 +39,10 @@ namespace Cadastro.Controllers.MaquinasController
             contexto.Entry(maquina).State = System.Data.Entity.EntityState.Modified;
             contexto.SaveChanges();
         }
+
+        public void LimparDados()
+        {
+
+        }
     }
 }

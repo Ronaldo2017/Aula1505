@@ -23,9 +23,15 @@ namespace CadastroMF.Views.MaquinasEProdutos
 
             ctrlm.AdicionarMaquina(maquina);
 
+            LimparDados();
+
         }
 
-        
+        private void LimparDados()
+        {
+            txtCodigoM.Text = string.Empty;
+            txtDescricaoM.Text = string.Empty;
+        }
 
         protected void btnLimpar_Click(object sender, EventArgs e)
         {
