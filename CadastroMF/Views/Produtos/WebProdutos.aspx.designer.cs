@@ -40,15 +40,6 @@ namespace CadastroMF.Views.Produtos {
         protected global::System.Web.UI.WebControls.TextBox txtCodigoP;
         
         /// <summary>
-        /// rfvCodigo control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvCodigo;
-        
-        /// <summary>
         /// lblDescricaoP control.
         /// </summary>
         /// <remarks>
@@ -67,31 +58,31 @@ namespace CadastroMF.Views.Produtos {
         protected global::System.Web.UI.WebControls.TextBox txtDescricaoP;
         
         /// <summary>
-        /// rfvDescricao control.
+        /// lblCodigoM control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvDescricao;
+        protected global::System.Web.UI.WebControls.Label lblCodigoM;
         
         /// <summary>
-        /// lblMaquinaId control.
+        /// dwlMaquinas control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblMaquinaId;
+        protected global::System.Web.UI.WebControls.DropDownList dwlMaquinas;
         
         /// <summary>
-        /// txtMaquinaId control.
+        /// SqlDataSource1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtMaquinaId;
+        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource1;
         
         /// <summary>
         /// btnSalvar control.
@@ -110,5 +101,14 @@ namespace CadastroMF.Views.Produtos {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnLimpar;
+        
+        /// <summary>
+        /// lnkListaProduto control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton lnkListaProduto;
     }
 }

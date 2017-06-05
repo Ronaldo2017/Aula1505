@@ -15,10 +15,10 @@ namespace CadastroMF.Views.Produtos
         {
             ProdutosController ctrl = new ProdutosController();
             List<Produto> lista = ctrl.ListarProduto();
-
             gvwProdutos.DataSource = lista;
             gvwProdutos.DataBind();
-
         }
+
+        
     }
 }

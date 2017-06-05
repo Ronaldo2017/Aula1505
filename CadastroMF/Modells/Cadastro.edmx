@@ -4,45 +4,45 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-    <Schema Namespace="Cadastro.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
-        <EntityType Name="Maquinas">
-          <Key>
-            <PropertyRef Name="Id" />
-          </Key>
-          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="Código" Type="nvarchar(max)" Nullable="false" />
-          <Property Name="Descrição" Type="nvarchar(max)" Nullable="false" />
-        </EntityType>
-        <EntityType Name="Produtos">
-          <Key>
-            <PropertyRef Name="Id" />
-          </Key>
-          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="Código" Type="nvarchar(max)" Nullable="false" />
-          <Property Name="Descrição" Type="nvarchar(max)" Nullable="false" />
-          <Property Name="MaquinaId" Type="int" Nullable="false" />
-        </EntityType>
-        <Association Name="FK_MaquinaProduto">
-          <End Role="Maquinas" Type="Self.Maquinas" Multiplicity="1" />
-          <End Role="Produtos" Type="Self.Produtos" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="Maquinas">
-              <PropertyRef Name="Id" />
-            </Principal>
-            <Dependent Role="Produtos">
-              <PropertyRef Name="MaquinaId" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <EntityContainer Name="CadastroStoreContainer">
-          <EntitySet Name="Maquinas" EntityType="Self.Maquinas" Schema="dbo" store:Type="Tables" />
-          <EntitySet Name="Produtos" EntityType="Self.Produtos" Schema="dbo" store:Type="Tables" />
-          <AssociationSet Name="FK_MaquinaProduto" Association="Self.FK_MaquinaProduto">
-            <End Role="Maquinas" EntitySet="Maquinas" />
-            <End Role="Produtos" EntitySet="Produtos" />
-          </AssociationSet>
-        </EntityContainer>
-      </Schema></edmx:StorageModels>
+    <Schema Namespace="Cadastro.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2012" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="CadastroStoreContainer">
+    <EntitySet Name="Maquinas" EntityType="Cadastro.Store.Maquinas" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Produtos" EntityType="Cadastro.Store.Produtos" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="MaquinaProduto" Association="Cadastro.Store.MaquinaProduto">
+      <End Role="Maquina" EntitySet="Maquinas" />
+      <End Role="Produto" EntitySet="Produtos" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Maquinas">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Código" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Descrição" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Produtos">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Código" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Descrição" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="MaquinaId" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="MaquinaProduto">
+    <End Role="Maquina" Type="Cadastro.Store.Maquinas" Multiplicity="1" />
+    <End Role="Produto" Type="Cadastro.Store.Produtos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Maquina">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Produto">
+        <PropertyRef Name="MaquinaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="Cadastro" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">

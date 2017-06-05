@@ -8,10 +8,10 @@
 
     <asp:Button ID="btnSalvar" runat="server" Text="Salvar" OnClick="btnSalvar_Click" />
 
-    <%--<h1>Categorias Ativas</h1>
+    <h1>Categorias Ativas</h1>
     <asp:GridView ID="gvwCategoria" runat="server"></asp:GridView>
 
      <h1>Categorias Excluidas</h1>
-    <asp:GridView ID="gvCategoriasExcluidas" runat="server"></asp:GridView>--%>
+    <asp:GridView ID="gvCategoriasExcluidas" runat="server"></asp:GridView>
 
 </asp:Content>

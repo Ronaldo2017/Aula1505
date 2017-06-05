@@ -40,9 +40,6 @@ namespace Cadastro.Controllers.MaquinasController
             contexto.SaveChanges();
         }
 
-        public void LimparDados()
-        {
-
-        }
+        
     }
 }

@@ -19,26 +19,27 @@ namespace CadastroMF.Views.Produtos
 
             produto.Código = txtCodigoP.Text;
             produto.Descrição = txtDescricaoP.Text;
-            produto.MaquinaId = int.Parse(txtMaquinaId.Text);         
-
+            produto.MaquinaId = dwlMaquinas.SelectedIndex;
             ProdutosController ctrlp = new ProdutosController();
-
             ctrlp.AdicionarProduto(produto);
-
             LimparDados();
         }
 
         protected void btnLimpar_Click(object sender, EventArgs e)
         {
             txtCodigoP.Text = string.Empty;
-            txtDescricaoP.Text = string.Empty;
-            txtMaquinaId.Text = string.Empty;
+            txtDescricaoP.Text = string.Empty;            
         }
 
         private void LimparDados()
         {
             txtCodigoP.Text = string.Empty;
-            txtDescricaoP.Text = string.Empty;
+            txtDescricaoP.Text = string.Empty;            
+        }
+
+        protected void lnkListaProduto_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("ListaProdutos.aspx");
         }
     }
 }

@@ -38,5 +38,10 @@ namespace CadastroMF.Views.MaquinasEProdutos
             txtCodigoM.Text = string.Empty;
             txtDescricaoM.Text = string.Empty;
         }
+
+        protected void LinkListaMaquinas_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("ListaMaquina.aspx");
+        }
     }
 }

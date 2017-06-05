@@ -12,13 +12,13 @@ namespace Aula2405_EF_MF_MODELFIRST.VIEWS.Categorias
             CategoriasController ctrl = new CategoriasController();
             List<Categoria> lista = ctrl.Listar();
 
-            //gvwCategoria.DataSource = lista.OrderBy(c => c.Nome);
-            //gvwCategoria.DataBind();
+            gvwCategoria.DataSource = lista.OrderBy(c => c.Nome);
+            gvwCategoria.DataBind();
 
-            //gvCategoriasExcluidas.DataSource = ctrl.listarInativos();
-            //gvCategoriasExcluidas.DataBind();
+            gvCategoriasExcluidas.DataSource = ctrl.listarInativos();
+            gvCategoriasExcluidas.DataBind();
 
-            
+
         }
 
         protected void btnSalvar_Click(object sender, EventArgs e)

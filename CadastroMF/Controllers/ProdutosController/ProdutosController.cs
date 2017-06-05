@@ -25,7 +25,8 @@ namespace Cadastro.Controllers.ProdutosController
 
         public void ExcluirProduto(Produto produto)
         {
-            contexto.Entry(produto).State = System.Data.Entity.EntityState.Deleted;
+            
+            contexto.Entry(produto).State = System.Data.Entity.EntityState.Modified;
             contexto.SaveChanges();
         }
 

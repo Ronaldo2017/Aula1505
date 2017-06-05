@@ -29,8 +29,6 @@ namespace Aula2405_EF_MF_MODELFIRST
             return contexto.Categorias.Where(c => c.Ativo == false).ToList();
         }
 
-
-
         public Categoria BuscarCategoriaPorId(int id)
         {
             return contexto.Categorias.Find(id);//metodo especifico para buscar o id
@@ -51,7 +49,6 @@ namespace Aula2405_EF_MF_MODELFIRST
             contexto.SaveChanges();
 
         }
-
 
         public void EditarCategoria(Categoria cat)
         {
