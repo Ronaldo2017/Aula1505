@@ -7,8 +7,8 @@
                 <h1>Máquinas</h1>
             </div>
             <div class="form-group">
-                <asp:Label ID="lblCodigoM" runat="server" Text="Código"></asp:Label>
-                <asp:TextBox ID="txtCodigoM" CssClass="form-control" runat="server" Width="95px" Font-Bold="True"></asp:TextBox>
+                <asp:Label ID="lblCodigo" runat="server" Text="Codigo"></asp:Label>
+                <asp:TextBox ID="txtCodigo" CssClass="form-control" runat="server" Width="95px" Font-Bold="True"></asp:TextBox>
                 <%--<asp:RequiredFieldValidator ID="rfvCodigo" runat="server" ErrorMessage="Preenchimento Obrigatório" ControlToValidate="txtCodigoM"></asp:RequiredFieldValidator>--%>
             </div>
 
@@ -21,6 +21,7 @@
             <div class="form-group">
                 <asp:Button ID="btnSalvar" runat="server" Text="Salvar" OnClick="btnSalvar_Click" CssClass="btn btn-primary" />
                 <asp:Button ID="btnLimpar" runat="server" Text="Limpar Dados" OnClick="btnLimpar_Click" CssClass="btn btn-primary" />
+                 <asp:Button ID="btnBuscar" runat="server" Text="Buscar" OnClick="btnBuscar_Click" CssClass="btn btn-primary" />
             </div>
             <asp:LinkButton ID="LinkListaMaquinas" runat="server" OnClick="LinkListaMaquinas_Click">Lista Máquinas</asp:LinkButton>
 

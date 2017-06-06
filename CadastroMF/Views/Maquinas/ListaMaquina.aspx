@@ -1,4 +1,5 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="ListaMaquina.aspx.cs" Inherits="CadastroMF.Views.Maquinas.ListaMaquina" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
     <h1>Lista de Máquinas</h1>
@@ -14,5 +15,16 @@
         <SortedDescendingHeaderStyle BackColor="#383838" />
     </asp:GridView>
 
+    <div class="form-group">
+        <h1>Buscar Maquinas</h1>
+        <asp:Label ID="lblCodigo" runat="server" Text="Código"></asp:Label>
+        <asp:TextBox ID="txtCodigo" runat="server"></asp:TextBox>
+    </div>
+
+    <div class="form-group">
+        <asp:Label ID="lblDescricao" runat="server" Text="Descrição"></asp:Label>
+        <asp:TextBox ID="txtDescricao" runat="server" TextMode="MultiLine"></asp:TextBox>
+    </div>
+    <asp:Button ID="btnBuscar" runat="server" Text="Buscar" OnClick="btnBuscar_Click"  CssClass="btn btn-primary"/>
 
 </asp:Content>

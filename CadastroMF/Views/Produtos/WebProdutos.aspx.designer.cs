@@ -22,22 +22,22 @@ namespace CadastroMF.Views.Produtos {
         protected global::System.Web.UI.UpdatePanel UpdatePanel1;
         
         /// <summary>
-        /// lblCodigoP control.
+        /// lblCodigo control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblCodigoP;
+        protected global::System.Web.UI.WebControls.Label lblCodigo;
         
         /// <summary>
-        /// txtCodigoP control.
+        /// txtCodigo control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtCodigoP;
+        protected global::System.Web.UI.WebControls.TextBox txtCodigo;
         
         /// <summary>
         /// lblDescricaoP control.
@@ -110,5 +110,14 @@ namespace CadastroMF.Views.Produtos {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.LinkButton lnkListaProduto;
+        
+        /// <summary>
+        /// lnkEditaProduto control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton lnkEditaProduto;
     }
 }

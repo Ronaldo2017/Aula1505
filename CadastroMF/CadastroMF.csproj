@@ -225,6 +225,7 @@
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Views\Maquinas\ListaMaquina.aspx" />
     <Content Include="Views\Maquinas\WebMaquinas.aspx" />
+    <Content Include="Views\Produtos\EditarProdutos.aspx" />
     <Content Include="Views\Produtos\ListaProdutos.aspx" />
     <Content Include="Views\Produtos\WebProdutos.aspx" />
     <Content Include="Web.config" />
@@ -326,6 +327,13 @@
     </Compile>
     <Compile Include="Views\Maquinas\WebMaquinas.aspx.designer.cs">
       <DependentUpon>WebMaquinas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Produtos\EditarProdutos.aspx.cs">
+      <DependentUpon>EditarProdutos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Produtos\EditarProdutos.aspx.designer.cs">
+      <DependentUpon>EditarProdutos.aspx</DependentUpon>
     </Compile>
     <Compile Include="Views\Produtos\ListaProdutos.aspx.cs">
       <DependentUpon>ListaProdutos.aspx</DependentUpon>

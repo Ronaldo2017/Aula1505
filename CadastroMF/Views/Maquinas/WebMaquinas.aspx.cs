@@ -16,7 +16,7 @@ namespace CadastroMF.Views.MaquinasEProdutos
         {
             Maquina maquina = new Maquina();
 
-            maquina.Código = txtCodigoM.Text;
+            maquina.Codigo = txtCodigo.Text;
             maquina.Descrição = txtDescricaoM.Text;
 
             MaquinasController ctrlm = new MaquinasController();
@@ -29,13 +29,13 @@ namespace CadastroMF.Views.MaquinasEProdutos
 
         private void LimparDados()
         {
-            txtCodigoM.Text = string.Empty;
+            txtCodigo.Text = string.Empty;
             txtDescricaoM.Text = string.Empty;
         }
 
         protected void btnLimpar_Click(object sender, EventArgs e)
         {
-            txtCodigoM.Text = string.Empty;
+            txtCodigo.Text = string.Empty;
             txtDescricaoM.Text = string.Empty;
         }
 
@@ -43,5 +43,7 @@ namespace CadastroMF.Views.MaquinasEProdutos
         {
             Response.Redirect("ListaMaquina.aspx");
         }
+
+         
+        }
     }
-}

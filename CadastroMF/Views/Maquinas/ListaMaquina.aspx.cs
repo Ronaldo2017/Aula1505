@@ -16,5 +16,18 @@ namespace CadastroMF.Views.Maquinas
             gvwListaMaquinas.DataSource = maquina;
             gvwListaMaquinas.DataBind();
         }
+
+        //protected void btnBuscar_Click(object sender, EventArgs e)
+        //{
+        //    Maquina maquina = new Maquina();
+        //    maquina.Código = txtCodigo.Text;
+        //    MaquinasController ctrl = new MaquinasController();
+        //    int codigo = 0;
+        //    ctrl.ObterMaquinPorCodigo (codigo);
+
+        //    if(ctrl.ObterMaquinPorCodigo(codigo) != null)
+        //    {
+        //        maquina.Código = txtDescricao.Text;
+        //    }
+        }
     }
-}

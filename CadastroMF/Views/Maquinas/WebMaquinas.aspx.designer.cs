@@ -22,22 +22,22 @@ namespace CadastroMF.Views.MaquinasEProdutos {
         protected global::System.Web.UI.UpdatePanel UpdatePanel1;
         
         /// <summary>
-        /// lblCodigoM control.
+        /// lblCodigo control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblCodigoM;
+        protected global::System.Web.UI.WebControls.Label lblCodigo;
         
         /// <summary>
-        /// txtCodigoM control.
+        /// txtCodigo control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtCodigoM;
+        protected global::System.Web.UI.WebControls.TextBox txtCodigo;
         
         /// <summary>
         /// lblDescricaoM control.
@@ -74,6 +74,15 @@ namespace CadastroMF.Views.MaquinasEProdutos {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnLimpar;
+        
+        /// <summary>
+        /// btnBuscar control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnBuscar;
         
         /// <summary>
         /// LinkListaMaquinas control.
