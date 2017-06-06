@@ -7,24 +7,18 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace CadastroMP.Model
+namespace AvaliacaoWebForms.Model
 {
     using System;
     using System.Collections.Generic;
     
-    public partial class Maquina
+    public partial class Produto
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Maquina()
-        {
-            this.Produtos = new HashSet<Produtos>();
-        }
-    
         public int Id { get; set; }
         public string Nome { get; set; }
         public string Descricao { get; set; }
+        public int MaquinaId { get; set; }
     
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Produtos> Produtos { get; set; }
+        public virtual Maquina Maquinas { get; set; }
     }
 }

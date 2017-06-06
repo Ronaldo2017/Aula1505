@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="a6f7305d190f4c35ba7f4b0d5d7a29a1" Name="Diagram1" >
+        <EntityTypeShape EntityType="Cadastro.Maquina" Width="1.5" PointX="4.625" PointY="1.625" />
+        <EntityTypeShape EntityType="Cadastro.Produto" Width="1.5" PointX="7.375" PointY="1.75" />
+        <AssociationConnector Association="Cadastro.MaquinaProduto" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace CadastroMP.Model
+namespace AvaliacaoWebForms.Model
 {
     using System;
     using System.Collections.Generic;
@@ -17,7 +17,7 @@ namespace CadastroMP.Model
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Maquina()
         {
-            this.Produtos = new HashSet<Produtos>();
+            this.Produtos = new HashSet<Produto>();
         }
     
         public int Id { get; set; }
@@ -25,6 +25,6 @@ namespace CadastroMP.Model
         public string Descricao { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Produtos> Produtos { get; set; }
+        public virtual ICollection<Produto> Produtos { get; set; }
     }
 }

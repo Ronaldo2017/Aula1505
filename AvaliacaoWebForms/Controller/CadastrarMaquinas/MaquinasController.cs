@@ -1,18 +1,17 @@
-﻿using CadastroMP.Model;
- 
+﻿using AvaliacaoWebForms.Model; 
 using System.Collections.Generic;
 using System.Linq;
  
 
-namespace CadastroMP.Controller.MaquinaController
+namespace AvaliacaoWebForms.Controller.CadastrarMaquinas
 {
     public class MaquinasController
     {
-        static protected CadastroMaquinasContainer contexto = new CadastroMaquinasContainer();
+        protected CadastroContainer contexto = new CadastroContainer();
 
         public void AdicionarMaquina(Maquina maquina)
         {
-            if(maquina != null)
+            if (maquina != null)
             {
                 contexto.Maquinas.Add(maquina);
                 contexto.SaveChanges();
@@ -22,7 +21,7 @@ namespace CadastroMP.Controller.MaquinaController
         public Maquina BuscarMaquinaPorNome(Maquina maquina)
         {
             return contexto.Maquinas.FirstOrDefault(m => m.Nome.Equals(maquina.Nome));
-        }        
+        }
 
         public Maquina BuscarMaquinaPorId(int id)
         {
@@ -43,7 +42,7 @@ namespace CadastroMP.Controller.MaquinaController
         public void EditarMaquina(Maquina maquina)
         {
             contexto.Entry(maquina).State = System.Data.Entity.EntityState.Modified;
-            contexto.SaveChanges(); 
+            contexto.SaveChanges();
         }
     }
 }
