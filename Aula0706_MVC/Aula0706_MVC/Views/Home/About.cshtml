@@ -1,0 +1,20 @@
+﻿@{
+    ViewBag.Title = "About";
+}
+<h2>@ViewBag.Title.</h2><!--CARREGA O TITULO NA TELA-->
+<h3>@ViewBag.Message</h3><!--CARREGA A MENSAGEM NA TELA-->
+<h1>Olá @ViewBag.Nome</h1>
+
+@if (true)
+{
+
+}
+
+@Html.TextBox("NOme")
+@Html.TextBox("Sobre-NOme","Godofredo")
+@Html.TextBox("Cpf",null,new { @class = "form-control" })
+@Html.TextBox("Cpf2", null, new { @class = "form-control", placeholder = "000.000.000-00" })
+@Html.CheckBox("Ativo",true )Ativo
+
+<p>Use this area to provide additional information.</p>
+
