@@ -31,11 +31,10 @@ namespace AvaliacaoWebForms.View.CadastrarProdutos
 
         protected void btnAlterar_Click(object sender, EventArgs e)
         {
-            Produto p = new Produto();
             ProdutoController ctrp = new ProdutoController();
+            Produto p = ctrp.BuscarProdutoPorId(int.Parse(txtId.Text));
             p.Nome = txtNome.Text;
-            p = ctrp.BuscarProdutoPorNome(p);
-
+          
             if(p != null)
             {
                 p.Nome = txtNome.Text;
@@ -46,11 +45,10 @@ namespace AvaliacaoWebForms.View.CadastrarProdutos
         }
 
         protected void btnExcluir_Click(object sender, EventArgs e)
-        {
-            Produto p = new Produto();
+        {            
             ProdutoController ctrp = new ProdutoController();
-            p.Nome = txtNome.Text;
-            p = ctrp.BuscarProdutoPorNome(p);
+            Produto p = ctrp.BuscarProdutoPorId(int.Parse(txtId.Text));
+            p.Nome = txtNome.Text;           
 
             if (p != null)
             {

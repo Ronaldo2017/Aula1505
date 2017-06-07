@@ -31,10 +31,10 @@ namespace AvaliacaoWebForms.View.CadastrarMaquinas
 
         protected void btnAlterar_Click(object sender, EventArgs e)
         {
-            Maquina maq = new Maquina();
+           
             MaquinasController ctrlm = new MaquinasController();
-            maq.Nome = txtNome.Text;
-            maq = ctrlm.BuscarMaquinaPorNome(maq);
+            Maquina maq = ctrlm.BuscarMaquinaPorId(int.Parse(txtId.Text));
+            maq.Nome = txtNome.Text;            
 
             if (maq != null)
             {
@@ -48,13 +48,13 @@ namespace AvaliacaoWebForms.View.CadastrarMaquinas
 
         protected void btnExcluir_Click(object sender, EventArgs e)
         {
-            Maquina maq = new Maquina();
             MaquinasController ctrlm = new MaquinasController();
-            maq.Nome = txtNome.Text;
-            maq = ctrlm.BuscarMaquinaPorNome(maq);
+            Maquina maq = ctrlm.BuscarMaquinaPorId(int.Parse(txtId.Text));
+           
 
             if (maq != null)
             {
+                txtId.Text =  maq.Id.ToString();
                 txtNome.Text = maq.Nome;
                 txtDescricao.Text = maq.Descricao;
                 ctrlm.ExcluirMaquina(maq);                
@@ -70,9 +70,10 @@ namespace AvaliacaoWebForms.View.CadastrarMaquinas
 
         private void LimparDados()
         {
+            txtId.Text = string.Empty;
             txtNome.Text = string.Empty;
             txtDescricao.Text = string.Empty;
-            txtId.Text = string.Empty;
+           
         }
 
     }
