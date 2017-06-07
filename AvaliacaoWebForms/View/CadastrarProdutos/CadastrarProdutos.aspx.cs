@@ -14,7 +14,7 @@ namespace AvaliacaoWebForms.View.CadastrarProdutos
 
         protected void btnSalvar_Click(object sender, EventArgs e)
         {
-            if (!txtNomeP.Text.Equals("") && !txtDescricaoP.Equals(""))
+            if (!txtNomeP.Text.Equals("") && !txtDescricaoP.Equals("") )
             {
                 ProdutoController ctrlp = new ProdutoController();
                 Produto p = new Produto();

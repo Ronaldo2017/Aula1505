@@ -10,7 +10,7 @@ namespace AvaliacaoWebForms.View.CadastrarMaquinas
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+             
             MaquinasController ctrlm = new MaquinasController();
             List<Maquina> m = ctrlm.ListarMaquina();
 
