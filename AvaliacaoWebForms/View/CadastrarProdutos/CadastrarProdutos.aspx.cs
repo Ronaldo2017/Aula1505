@@ -21,7 +21,7 @@ namespace AvaliacaoWebForms.View.CadastrarProdutos
                 //adicionando produto
                 p.Nome = txtNomeP.Text;
                 p.Descricao = txtDescricaoP.Text;
-                p.MaquinaId = dwlMaquinas.SelectedIndex;          
+                p.MaquinaId = int.Parse(dwlMaquinas.SelectedItem.Value);          
                 ctrlp.AdicionarProduto(p);
             }
             LimparDados();

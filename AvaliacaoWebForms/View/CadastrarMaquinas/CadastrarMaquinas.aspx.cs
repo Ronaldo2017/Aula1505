@@ -13,7 +13,7 @@ namespace AvaliacaoWebForms.View.CadastrarMaquinas
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-             
+
         }
 
         protected void btnSalvar_Click(object sender, EventArgs e)
@@ -21,7 +21,6 @@ namespace AvaliacaoWebForms.View.CadastrarMaquinas
             if (!txtNome.Text.Equals("") && !txtDescricao.Equals(""))
             {
                 Maquina m = new Maquina();
-
                 //adicionando maquina
                 m.Nome = txtNome.Text;
                 m.Descricao = txtDescricao.Text;
