@@ -9,23 +9,23 @@
                     <h1>Cadastro Máquinas</h1>
                     <div class="form-group">
                         <asp:Label ID="lblNome" runat="server" Text="Nome "></asp:Label>
-                        <asp:TextBox ID="txtNome" CssClass="form-control" runat="server" ></asp:TextBox>
-                        
+                        <asp:TextBox ID="txtNome" CssClass="form-control" runat="server" Font-Bold="True"></asp:TextBox>
+
                     </div>
                     <%--<asp:RequiredFieldValidator runat="server" ErrorMessage="Campo Obrigatório" ControlToValidate="txtNome"></asp:RequiredFieldValidator>--%>
                     <div class="form-group">
                         <asp:Label ID="lblDescricao" runat="server" Text="Descrição "></asp:Label>
-                        <asp:TextBox ID="txtDescricao" CssClass="form-control" runat="server" TextMode="MultiLine"></asp:TextBox>
+                        <asp:TextBox ID="txtDescricao" CssClass="form-control" runat="server" TextMode="MultiLine" Font-Bold="True"></asp:TextBox>
 
                     </div>
 
                     <div class="form-group">
-                        <asp:Button ID="btnSalvar" runat="server" Text="Salvar" CssClass="btn btn-primary" OnClick="btnSalvar_Click"/>
-  
+                        <asp:Button ID="btnSalvar" runat="server" Text="Salvar" CssClass="btn btn-primary" OnClick="btnSalvar_Click" OnClientClick="return confirm('Salvo com sucesso');" />
+
                         <asp:Button ID="btnLimpar" runat="server" Text="Limpar" CssClass="btn btn-primary" OnClick="btnLimpar_Click" />
 
                     </div>
-                      <%--OnClientClick="return confirm('Salvo com sucesso');" --%>
+                 
                     <div class="form-group">
                         <asp:LinkButton ID="lnkListarMaquinas" runat="server" OnClick="lnkListaMaquinas_Click">Lista Máquinas</asp:LinkButton>
                     </div>
@@ -37,6 +37,7 @@
 
                 </div>
             </div>
+       
         </ContentTemplate>
 
     </asp:UpdatePanel>

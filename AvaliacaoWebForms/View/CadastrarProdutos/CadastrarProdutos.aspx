@@ -19,13 +19,13 @@
 
                     <div class="form-group">
                         <asp:Label ID="lblNome" runat="server" Text="Máquinas"></asp:Label>
-                         <asp:DropDownList ID="dwlMaquinas" runat="server" DataSourceID="SqlDataSource1" DataTextField="Nome" DataValueField="id"></asp:DropDownList>
+                         <asp:DropDownList ID="dwlMaquinas" runat="server" DataSourceID="SqlDataSource1" DataTextField="Nome" DataValueField="id" Font-Bold="True"></asp:DropDownList>
                         <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:CadastroConnectionString %>" SelectCommand="SELECT [Nome], [Id] FROM [Maquinas]"></asp:SqlDataSource>
                     </div>
                    
 
                     <div class="btn-group">
-                        <asp:Button ID="btnSalvar" runat="server" Text="Salvar" CssClass="btn btn-primary" OnClick="btnSalvar_Click" />
+                        <asp:Button ID="btnSalvar" runat="server" Text="Salvar" CssClass="btn btn-primary" OnClick="btnSalvar_Click" OnClientClick="return confirm('Salvo com sucesso');" />
                     </div>
 
                     <div class="btn-group">
