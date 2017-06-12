@@ -1,7 +1,8 @@
-﻿using AvaliacaoWebForms.Controller.ProdutosController;
+﻿using AvaliacaoWebForms.Controller.CadastrarMaquinas;
+using AvaliacaoWebForms.Controller.ProdutosController;
 using AvaliacaoWebForms.Model;
 using System;
- 
+
 
 namespace AvaliacaoWebForms.View.CadastrarProdutos
 {
@@ -9,7 +10,7 @@ namespace AvaliacaoWebForms.View.CadastrarProdutos
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+          
         }
 
         protected void btnSalvar_Click(object sender, EventArgs e)
@@ -48,5 +49,7 @@ namespace AvaliacaoWebForms.View.CadastrarProdutos
         {
             Response.Redirect("EditarProdutos.aspx");
         }
+
+     
     }
 }

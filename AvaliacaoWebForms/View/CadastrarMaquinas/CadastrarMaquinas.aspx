@@ -20,12 +20,12 @@
                     </div>
 
                     <div class="form-group">
-                        <asp:Button ID="btnSalvar" runat="server" Text="Salvar" CssClass="btn btn-primary" OnClick="btnSalvar_Click" OnClientClick="return confirm('Salvo com sucesso');" />
+                        <asp:Button ID="btnSalvar" runat="server" Text="Salvar" CssClass="btn btn-primary" OnClick="btnSalvar_Click"  />
 
                         <asp:Button ID="btnLimpar" runat="server" Text="Limpar" CssClass="btn btn-primary" OnClick="btnLimpar_Click" />
 
                     </div>
-                 
+               <%--  OnClientClick="return confirm('Salvo com sucesso');"--%>
                     <div class="form-group">
                         <asp:LinkButton ID="lnkListarMaquinas" runat="server" OnClick="lnkListaMaquinas_Click">Lista Máquinas</asp:LinkButton>
                     </div>

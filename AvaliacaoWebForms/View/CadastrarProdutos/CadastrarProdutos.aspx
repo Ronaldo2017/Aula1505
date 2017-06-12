@@ -25,9 +25,9 @@
                    
 
                     <div class="btn-group">
-                        <asp:Button ID="btnSalvar" runat="server" Text="Salvar" CssClass="btn btn-primary" OnClick="btnSalvar_Click" OnClientClick="return confirm('Salvo com sucesso');" />
+                        <asp:Button ID="btnSalvar" runat="server" Text="Salvar" CssClass="btn btn-primary" OnClick="btnSalvar_Click"  />
                     </div>
-
+                   <%-- OnClientClick="return confirm('Salvo com sucesso');"--%>
                     <div class="btn-group">
                         <asp:Button ID="btnLimpar" runat="server" Text="Limpar" CssClass="btn btn-primary" OnClick="btnLimpar_Click" />
                     </div>
