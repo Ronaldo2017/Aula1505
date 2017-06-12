@@ -1,0 +1,17 @@
+﻿
+@{
+    ViewBag.Title = "Categorias";
+}
+
+<h2>@ViewBag.Title</h2>
+ 
+@foreach(string cat in ViewBag.ListaCategorias)
+{
+  <!-- <p>@cat</p> - mostra a lista--> 
+  <!--<a href="#">@cat</a> - mostra o link -->  
+    
+    @Html.ActionLink(@cat,"Index","Categorias") 
+    @:|
+                                                 
+}
+
