@@ -1,0 +1,21 @@
+﻿@model  IEnumerable<Aula1406_MVC.Models.Categoria> 
+@* lista de categorias*@
+
+@{
+    ViewBag.Title = "Categorias";
+}
+
+<h2>@ViewBag.Title</h2>
+
+@if (TempData["Mensagem"] != null)
+{
+    <p class="alert-info">@TempData["Mensagem"]</p>
+}
+
+@foreach(var item in Model)
+{
+    @Html.LabelFor(m => item.Nome)
+    @Html.DisplayFor(m => item.Nome)
+
+}
+
